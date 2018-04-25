@@ -8,6 +8,12 @@
   <name>my-app</name>
   <url>http://maven.apache.org</url>
 
+
+ <scm>
+		<url>https://github.com/nikitaz4/helloWorld</url>
+		<connection>scm:git:https://github.com/nikitaz4/helloWorld.git</connection>
+      		<tag>HEAD</tag>
+  </scm>
   <properties>
       <!-- This property will be set by the Maven Dependency plugin -->
       <annotatedJdk>${org.checkerframework:jdk8:jar}</annotatedJdk>
@@ -162,6 +168,14 @@
                     </execution>
                 </executions>
             </plugin>
+	      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+        <configuration>
+          <tagNameFormat>v@{project.version}</tagNameFormat>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
