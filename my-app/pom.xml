@@ -17,6 +17,7 @@
   <properties>
       <!-- This property will be set by the Maven Dependency plugin -->
       <annotatedJdk>${org.checkerframework:jdk8:jar}</annotatedJdk>
+      <project.scm.id>my-scm-server</project.scm.id>
   </properties>
 
   <dependencies>
