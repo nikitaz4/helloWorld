@@ -12,7 +12,7 @@
  <scm>
 		<url>https://github.com/nikitaz4/helloWorld</url>
 		<connection>scm:git:https://github.com/nikitaz4/helloWorld.git</connection>
-      		<tag>HEAD</tag>
+      		<developerConnection>scm:git:https://github.com/nikitaz4/helloWorld.git</developerConnection>
   </scm>
   <properties>
       <!-- This property will be set by the Maven Dependency plugin -->
