@@ -176,6 +176,7 @@
         <version>2.5.3</version>
 	<configuration>
         	<tagNameFormat>@{project.artifactId}-@{project.version}</tagNameFormat>
+		<scmCommentPrefix>Reviewed by maven auto release</scmCommentPrefix>
         </configuration>
       </plugin>
     </plugins>
