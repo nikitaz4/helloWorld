@@ -11,7 +11,7 @@
 
  <scm>
 		<url>https://github.com/nikitaz4/helloWorld</url>
-		<connection>scm:git:https://github.com/nikitaz4/helloWorld.git</connection>
+		<connection>scm:git:git@github.com:nikitaz4/helloWorld.git</connection>
       		<developerConnection>scm:git:git@github.com:nikitaz4/helloWorld.git</developerConnection>
 		<tag>HEAD</tag>
   </scm>
