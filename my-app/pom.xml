@@ -177,6 +177,7 @@
 	<configuration>
         	<tagNameFormat>@{project.artifactId}-@{project.version}</tagNameFormat>
 		<scmCommentPrefix>Reviewed by maven auto release</scmCommentPrefix>
+		<tag>${env.BUILD_NUMBER}</tag>
         </configuration>
       </plugin>
     </plugins>
