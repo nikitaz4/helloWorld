@@ -162,7 +162,7 @@
                     </execution>
                     <execution>
                         <id>docker-stop</id>
-                        <phase>install</phase>
+                        <phase>package</phase>
                         <goals>
                             <goal>stop</goal>
                         </goals>
