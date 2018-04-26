@@ -11,8 +11,8 @@
 
  <scm>
 		<url>https://github.com/nikitaz4/helloWorld</url>
-		<connection>scm:git:https://github.com/nikitaz4/helloWorld.git</connection>
-      		<developerConnection>scm:https://github.com/nikitaz4/helloWorld.git</developerConnection>
+		<connection>scm:git:git@github.com:nikitaz4/helloWorld.git</connection>
+      		<developerConnection>scm:git:git@github.com:nikitaz4/helloWorld.git</developerConnection>
   </scm>
   <properties>
       <!-- This property will be set by the Maven Dependency plugin -->
@@ -182,6 +182,7 @@
     </dependencies>
 	<configuration>
         	<tagNameFormat>@{project.artifactId}-@{project.version}</tagNameFormat>
+		<tag>1111</tag>
         </configuration>
       </plugin>
     </plugins>
