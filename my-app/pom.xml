@@ -182,7 +182,7 @@
     </dependencies>
 	<configuration>
         	<tagNameFormat>@{project.artifactId}-@{project.version}</tagNameFormat>
-		<tag>1111</tag>
+		<tag>${env.BUILD_NUMBER}</tag>
         </configuration>
       </plugin>
     </plugins>
