@@ -138,9 +138,11 @@
                                 <ports>
                                     <port>8088:8080</port>
                                 </ports>
+<!--
                                 <wait>
                                     <time>1000</time>
                                 </wait>
+-->
                             </run>
                         </image>
                     </images>
