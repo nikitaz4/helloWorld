@@ -18,8 +18,8 @@ node {
         id: 'userInput', message: 'release?' , parameters: [
         [$class: 'BooleanParameterDefinition', defaultValue: false, description: '', name: 'Please confirm you agree with this']
         ])
-        sh "${mvnHome}/bin/mvn -f my-app/pom.xml release:prepare"
-        sh "${mvnHome}/bin/mvn -f my-app/pom.xml release:perform -Darguments=-Dmaven.deploy.skip=true"
+        sh "${mvnHome}/bin/mvn -f my-app/pom.xml release:prepare release:perform -Darguments=-Dmaven.deploy.skip=true"
+//        sh "${mvnHome}/bin/mvn -f my-app/pom.xml release:perform -Darguments=-Dmaven.deploy.skip=true"
    }
    
 
