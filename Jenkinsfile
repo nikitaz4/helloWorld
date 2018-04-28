@@ -6,7 +6,7 @@ node {
       properties([pipelineTriggers([[$class: 'GitHubPushTrigger'], pollSCM('* * * * *')])])
 //      checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'WipeWorkspace'] , [$class: 'LocalBranch', localBranch: 'master']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'bea5bec6-672e-4de0-8cbf-48b4e26d4b53', url: 'https://github.com/nikitaz4/helloWorld.git']]])
 //      checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'bea5bec6-672e-4de0-8cbf-48b4e26d4b53', url: 'https://github.com/nikitaz4/helloWorld.git']]])
-        git credentialsId: 'bea5bec6-672e-4de0-8cbf-48b4e26d4b53', url: 'git@github.com:nikitaz4/helloWorld.git'
+        git credentialsId: 'bea5bec6-672e-4de0-8cbf-48b4e26d4b53', url: 'git@github.com:nikitaz4/helloWorld.git', branch: 'master'
       mvnHome = tool 'maven'
    }
    stage('Build') {
