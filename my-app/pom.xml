@@ -139,7 +139,7 @@
                                     <port>8088:8080</port>
                                 </ports>
                                 <wait>
-                                    <time>10000</time>
+                                    <time>1000</time>
                                 </wait>
                             </run>
                         </image>
